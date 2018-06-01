@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans|Satisfy');
 
 $turq: #29D3BA;
 $gosc: #353535;
@@ -28,7 +28,8 @@ $gcla: #EAEAEA;
     box-sizing: border-box;
 }
 body {
-    font-family:Work Sans;
+    padding-top: 90px;
+    overflow-x: hidden;
 }
 .row {
     width: 1140px;
@@ -38,7 +39,7 @@ a {
     color: $turq;
     text-decoration: none;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, a, span, p, label {
     font-family:Work Sans;
 }
 h1 {
@@ -157,16 +158,17 @@ footer .adorno-fuegos-3 {
 /* Home */
 .home > section {
     position: relative;
+    overflow: hidden;
 }
 #logo img {
     height: 60px !important;
-    margin-right: 20px;
+    margin-right: 40px;
     width: auto !important;
 }
 #logo h1 {
     color: $turq;
-    font-family: JumpParty;
-    font-size: 4.5rem;
+    font-family: satisfy;
+    font-size: 3rem;
 }
 #logo {
     display: flex;
@@ -180,7 +182,10 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    top:0;
+    z-index: 9;
+    height: 90px;
 }
 nav {
     display: flex;
@@ -194,13 +199,16 @@ nav ul {
 nav li {
     padding: 0px 10px;
 }
+.nav-links a {
+    font-size: 1.1rem;
+}
 .modal-login {
     background-color: $gosc;
     border: 2px solid $turq;
     border-radius: 5px;
     right: 41px;
     bottom: -209px;
-    z-index: 9;
+    z-index: 10;
     display: none;
 }
 .modal-login i::before {
@@ -251,7 +259,7 @@ nav li {
 }
 #pant1 .register-box {
     flex-shrink: 0;
-    flex-basis: 320px;
+    flex-basis: 420px;
     background-color: $gcla;
 }
 .register-box {
@@ -267,6 +275,8 @@ nav li {
     margin: 5px 0px 10px;
     padding: 7px 5px;
     border-radius: 0.3rem;
+}
+form input[type=text] {
     border: 1pt solid #35353599;
 }
 .enviar {
@@ -346,7 +356,7 @@ nav li {
 }
 .h-box-3 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-flow: row wrap;
     margin: 40px 0px 60px;
     height: auto;
@@ -360,7 +370,7 @@ nav li {
 }
 .h-box-3-text {
     flex: 1 0 320px;
-    max-width: 580px;
+    max-width: 640px;
     background-color: rgba(0,0,0,0.55);
     border-radius: 1rem;
     padding:40px 20px;
@@ -448,6 +458,8 @@ footer a {
     flex: 1 0 100%;
     text-align: right;
     padding: 15px;
+}
+.home #foot-5 {
     margin-top: 35px;
 }
 footer li {
@@ -479,3 +491,185 @@ footer .enviar {
 
 /* ------------------------------ Single ------------------------------------ */
 
+#single-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    overflow-y: hidden;
+}
+.single-sidebar-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.single-sidebar-image img {
+    height: auto;
+    margin-bottom: 20px;
+    border: 10px solid $gosc;
+    border-radius: 5px;
+}
+.single-sidebar {
+    background-color: $blanc;
+    flex: 0 0 320px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+.single-content-right {
+    flex: 1 1 0;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.single-list {
+    overflow-y: scroll;
+    background-color: $gcla;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 40px;
+}
+.single-list-item {
+    flex: 0 0 250px;
+    margin: 20px;
+    background-color: $blanc;
+}
+.single-list-image {
+    width: 100%;
+    height: 150px;
+}
+.single-list-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.single-list-text {
+    padding: 20px 20px 40px;
+}
+.single-list-text span {
+    color: $gosc;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+body.single::-webkit-scrollbar {
+    display: none;
+}
+.single-sidebar-menu a {
+    color: $gosc;
+    margin: 4px 0 15px;
+    display: block;
+}
+.single-nav {
+    padding: 5px 20px 5px 50px;
+    background-color: #d4d4d4;
+    position: relative;
+}
+.single-nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.single-nav ul li {
+    margin: 5px 10px;
+}
+.single-nav ul li a {
+    color: $gosc;
+}
+.btn-crear-fiesta {
+    position: absolute;
+    @mixin size 50px;
+    border-radius: 50px;
+    background-color: $turq;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 50px;
+    bottom: -26px;
+    right: 15%;
+}
+.btn-crear-fiesta i {
+    color:$blanc;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#modal-crear-fiesta {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #33333399;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+    display: none;
+}
+#modal-crear-fiesta form {
+    width: auto;
+    height: auto;
+    background-color: $gosc;
+    z-index: 999;
+    border: 5px solid $turq;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 50px 50px 70px;
+    position: relative;
+}
+#modal-crear-fiesta form label, #modal-crear-fiesta form span {
+    color: $blanc;
+    font-size: 1.2rem;
+    margin: 10px 0; 
+}
+#modal-crear-fiesta form span {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: -5px;
+}
+#modal-crear-fiesta form input {
+    margin: 10px 0;
+}
+#name {
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid $gcla;
+}
+#modal-crear-fiesta form input[type=text] {
+    width: 100%;
+    border: 1pt solid #35353599;
+    padding: 7px 5px;
+}
+#modal-crear-fiesta form .radio-label {
+    color: $turq;
+}
+#modal-crear-fiesta h2 {
+    color: $turq;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+#modal-crear-fiesta form input[type=submit] {
+    width: 100%;
+    border: 2px solid $turq;
+    background-color: $turq;
+    border-radius: 5px;
+    text-align: center;
+    color: $gosc;
+    padding: 10px 0px;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#modal-crear-fiesta i {
+    color: $turq;
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
