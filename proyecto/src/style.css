@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+$turq: #29D3BA;
+$gosc: #353535;
+$blanc: #fff;
+$gcla: #EAEAEA;
+@font-face {
+    font-family: JumpParty;
+    src: url('jumpparty/JumpParty.ttf');
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:Work Sans;
+}
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+a {
+    color: $turq;
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family:Work Sans;
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+span {
+    font-size:0.6rem;
+    font-family:Work Sans;
+}
+p {
+    font-size: 0.9rem;
+    line-height: 18px;
+    margin-bottom: 6px;
+    font-family:Work Sans;
+}
+.modal {
+    position: absolute;
+}
+/* Home */
+.home > section {
+    position: relative;
+}
+#logo img {
+    height: 60px;
+    margin-right: 20px;
+}
+#logo h1 {
+    color: $turq;
+    font-family: JumpParty;
+    font-size: 4.5rem;
+}
+#logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+header {
+    background-color: $gosc;
+    width:100%;
+    padding: 0.6% 3%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+nav li {
+    padding: 0px 10px;
+}
+.modal-login {
+    background-color: $gosc;
+    border: 2px solid $turq;
+    border-radius: 5px;
+    right: 41px;
+    bottom: -209px;
+    z-index: 9;
+}
+.modal-login i::before {
+    position: absolute;
+    right: 15px;
+    top: -14px;
+    color: $turq;
+    font-size: 2rem;
+}
+.modal-login form {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px 20px 10px;
+}
+.modal-login form input {
+    width: 100%;
+    padding: 7px 5px;
+}
+.modal-login h4 {
+    color: $turq;
+    margin-bottom: 10px;
+}
+.modal-login input {
+    margin: 5px 0px 10px;
+    border-radius: 5px;
+}
+#pant1 {
+    display:flex;
+    flex-flow: row nowrap;
+}
+#pant1 div {
+    height: 560px;
+    flex: 1 1 320px;
+}
+#pant1 .img-home-1 {
+   background-color: $gosc;
+}
+#pant1 .img-home-2 {
+    background-color: $blanc;
+}
+#pant1 .img-home-3 {
+    background-color: $turq;
+}
+#pant1 .register-box {
+    flex-shrink: 0;
+    flex-basis: 320px;
+    background-color: $gcla;
+}
+.register-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.form-reg-home {
+    width: 250px;
+}
+.form-reg-home input {
+    width: 100%;
+    margin: 5px 0px 10px;
+    padding: 7px 5px;
+    border-radius: 0.3rem;
+    border: 1pt solid #35353599;
+}
+.enviar {
+    color: $blanc;
+    background-color: $turq;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.form-reg-home p {
+    margin: 13px 0px 10px;
+}
+#pant2 {
+    background-color: $gosc;
+    padding: 50px 15px;
+}
+.home-boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;    
+}
+#pant2 h2 {
+    width: 100%;
+    text-align: center;
+    color: $blanc;
+    position: relative;
+    margin-bottom: 40px;
+    flex:1 0 100%;
+}
+.home-h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: $turq;
+    width: 50px;
+    height: 3px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: -15px;
+}
+.h-box {
+    margin: 0px 30px;
+    width: 250px;
+    background-color: $blanc;
+}
+.text-box {
+    padding: 15px 10px;
+}
+.h-box h3 {
+    margin: 0px 0 10px;
+    color: $turq;
+}
+.h-box .img-box {
+    height: 200px;
+    width: 250px;
+    background-color: $turq;
+}
+#pant3 {
+    background-color: #A0A0A0;
+    width: 100%;
+    padding: 50px 0px;
+}
+#pant3 h2 {
+    width: 100%;
+    text-align: center;
+    color: $blanc;
+}
+.home-boxs-3 {
+    width: 100%;
+}
+.h-box-3 {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: 40px 0px 60px;
+    height: auto;
+    align-items: stretch;
+    min-height: 230px;
+}
+.h-box-3-img {
+    flex: 0 0 400px;
+    background-color: $turq;
+}
+.h-box-3-text {
+    flex: 1 0 320px;
+    max-width: 500px;
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 1rem;
+    padding:40px 20px;
+}
+.h-box-3-text h3, .h-box-3-text p {
+    color: $blanc;
+}
+.h-box-3-text h3 {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    position: relative;
+}
+.h-box-3-text h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: $turq;
+    width: 3px;
+    height: 30px;
+    left: 0;
+}
+#pant4 {
+    background-color: $gosc;
+    padding: 50px 15px;
+}
+#pant4 .img-box {
+    height: 500px;
+    width: 500px;
+    background-color: $turq;
+}
+.home-4-text {
+    color: $blanc;
+    flex: 1 0 200px;
+    margin-left: 150px;
+}
+#pant4 .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+#pant4 h2 {
+    margin-bottom: 50px;
+    position: relative;
+}
+#pant4 h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: $turq;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    bottom: -15px;
+}
+/* Footer */
+footer {
+    background-color: $gcla;
+}
+footer .row {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 40px 0;
+}
+footer .row > div {
+    flex: 1 0 0;
+    border-left: 1px solid #35353533;
+    padding: 0px 35px;
+}
+footer .row > div:first-child {
+    border-left: none;
+    padding-left: 0px;
+}
+footer h4 {
+    margin-bottom: 15px;
+}
+footer a {
+    color: $gosc;
+}
+#foot-5 {
+    border-top:1px solid #35353533;
+    flex: 1 0 100%;
+    text-align: right;
+    padding: 15px;
+    margin-top: 35px;
+}
+footer li {
+    margin-bottom: 10px;
+}
+footer input {
+    width: 100%;
+    margin: 5px 0px 10px;
+    padding: 7px 5px;
+    border-radius: 0.3rem;
+    border: 1pt solid #35353599;
+}
+footer .enviar {
+    margin-top: 10px;
+}
+.enviar-white {
+    color: $turq;
+    background-color: transparent;
+    border: 1px solid $turq;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100px;
+    float: right;
+    margin-top: 10px;
+}
