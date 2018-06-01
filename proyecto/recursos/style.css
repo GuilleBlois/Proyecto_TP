@@ -62,6 +62,117 @@ p {
     position: absolute;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.adorno {
+    position: absolute;
+}
+
+.adorno-fuegos-1, .adorno-fuegos-2, .adorno-fuegos-3, .adorno-fuegos-4 {
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.adorno-fuegos-1 {
+    background-image: url("../imagenes/fuegos1.png");
+}
+
+.adorno-fuegos-2 {
+    background-image: url("../imagenes/fuegos2.png");
+}
+
+.adorno-fuegos-3 {
+    background-image: url("../imagenes/fuegos3.png");
+}
+
+.adorno-fuegos-4 {
+    background-image: url("../imagenes/fuegos4.png");
+}
+
+.register-box, #pant2, #pant3, #pant4, footer {
+    position: relative;
+}
+
+.register-box .adorno-fuegos-1 {
+    height: 120px;
+    width: 120px;
+    right: 159px;
+    bottom: 12px;
+}
+
+.register-box .adorno-fuegos-2 {
+    height: 120px;
+    width: 120px;
+    right: 34px;
+    bottom: 46px;
+}
+
+.register-box form {
+    z-index: 2;
+}
+
+#pant2 .adorno-fuegos-3 {
+    height: 200px;
+    width: 150px;
+    left: 71px;
+    top: 45px;
+}
+
+#pant2 .adorno-fuegos-4 {
+    height: 200px;
+    width: 150px;
+    right: 60px;
+    bottom: 20px;
+}
+
+#pant3 .adorno-fuegos-2-1 {
+    height: 350px;
+    width: 350px;
+    right: 0px;
+    top: -50px;
+}
+
+#pant3 .adorno-fuegos-1 {
+    height: 350px;
+    width: 350px;
+    left: -50px;
+    top: -50px;
+}
+
+#pant3 .adorno-fuegos-2-2 {
+    height: 350px;
+    width: 350px;
+    right: -50px;
+    top: -50px;
+}
+
+#pant4 .adorno-fuegos-2 {
+    height: 200px;
+    width: 200px;
+    right: 83px;
+    bottom: 39px;
+}
+
+footer .adorno-fuegos-4 {
+    width: 115px;
+    height: 177px;
+    left: 5px;
+    top: 10px;
+}
+
+footer .adorno-fuegos-3 {
+    width: 144px;
+    height: 210px;
+    right: 10px;
+    bottom: 10px;
+}
+
 /* Home */
 
 .home > section {
@@ -69,8 +180,9 @@ p {
 }
 
 #logo img {
-    height: 60px;
+    height: 60px !important;
     margin-right: 20px;
+    width: auto !important;
 }
 
 #logo h1 {
@@ -117,6 +229,7 @@ nav li {
     right: 41px;
     bottom: -209px;
     z-index: 9;
+    display: none;
 }
 
 .modal-login i::before {
@@ -151,23 +264,33 @@ nav li {
 #pant1 {
     display:flex;
     flex-flow: row nowrap;
+    height: 75%;
+    align-items: stretch;
 }
 
 #pant1 div {
-    height: 560px;
+    /* height: 560px; */
     flex: 1 1 320px;
 }
 
 #pant1 .img-home-1 {
-   background-color: #353535;
-}
+   background-image: url("../imagenes/fiesta1.jpg");
+   background-position: 50%;
+   background-size: cover;
+   background-repeat: no-repeat}
 
 #pant1 .img-home-2 {
-    background-color: #fff;
+    background-image: url("../imagenes/boda1.jpg");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #pant1 .img-home-3 {
-    background-color: #29D3BA;
+    background-image: url("../imagenes/celebracion1.jpg");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #pant1 .register-box {
@@ -179,7 +302,7 @@ nav li {
 .register-box {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .form-reg-home {
@@ -275,6 +398,7 @@ nav li {
     width: 100%;
     text-align: center;
     color: #fff;
+    position: relative;
 }
 
 .home-boxs-3 {
@@ -289,6 +413,7 @@ nav li {
     height: auto;
     align-items: stretch;
     min-height: 230px;
+    position: relative;
 }
 
 .h-box-3-img {
@@ -298,10 +423,11 @@ nav li {
 
 .h-box-3-text {
     flex: 1 0 320px;
-    max-width: 500px;
+    max-width: 580px;
     background-color: rgba(0,0,0,0.55);
     border-radius: 1rem;
     padding:40px 20px;
+    z-index: 2;
 }
 
 .h-box-3-text h3, .h-box-3-text p {
@@ -339,6 +465,7 @@ nav li {
     color: #fff;
     flex: 1 0 200px;
     margin-left: 150px;
+    z-index: 2;
 }
 
 #pant4 .row {
@@ -380,6 +507,7 @@ footer .row > div {
     flex: 1 0 0;
     border-left: 1px solid #35353533;
     padding: 0px 35px;
+    z-index: 2;
 }
 
 footer .row > div:first-child {
@@ -432,3 +560,6 @@ footer .enviar {
     float: right;
     margin-top: 10px;
 }
+
+/* ------------------------------ Single ------------------------------------ */
+
