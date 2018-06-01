@@ -185,12 +185,14 @@ footer .adorno-fuegos-3 {
     height: 60px !important;
     margin-right: 40px;
     width: auto !important;
+    box-shadow: 0 0 15px #29D3BA;
 }
 
 #logo h1 {
     color: #29D3BA;
     font-family: satisfy;
     font-size: 3rem;
+    /* text-shadow: 0 0 60px $blanc; */
 }
 
 #logo {
@@ -210,6 +212,7 @@ header {
     top:0;
     z-index: 9;
     height: 90px;
+    overflow: hidden;
 }
 
 nav {
@@ -229,6 +232,7 @@ nav li {
 
 .nav-links a {
     font-size: 1.1rem;
+    /* text-shadow: 0 0 30px $blanc; */
 }
 
 .modal-login {
@@ -428,9 +432,13 @@ form input[type=text] {
     position: relative;
 }
 
-.h-box-3-img {
+. {
     flex: 0 0 400px;
     background-color: #29D3BA;
+}
+
+. img {
+    height: auto;
 }
 
 .h-box-3-text {
@@ -609,6 +617,10 @@ footer .enviar {
     padding-top: 40px;
 }
 
+.single-sidebar ul {
+    width: 200px;
+}
+
 .single-content-right {
     flex: 1 1 0;
     height: 100%;
@@ -667,7 +679,7 @@ body.single::-webkit-scrollbar {
 }
 
 .single-nav {
-    padding: 5px 20px 5px 50px;
+    padding: 15px 20px 10px 50px;
     background-color: #d4d4d4;
     position: relative;
 }
@@ -790,4 +802,86 @@ body.single::-webkit-scrollbar {
     top: 15px;
     right: 15px;
     cursor: pointer;
+}
+
+/* Single Fiesta */
+
+.single-fiesta .single-sidebar {
+    background-color:#636363;
+}
+
+.single-fiesta .single-sidebar a {
+    color: #fff;
+}
+
+.single-fiesta .single-nav {
+    background-color: #1E1E1E;
+}
+
+.single-fiesta .single-sidebar h2 {
+    color: #29D3BA;
+}
+
+.single-fiesta .single-nav a {
+    color: #fff;
+}
+
+.single-fiesta .single-list {
+    background-color: #353535;
+}
+
+/* Single Celebracion */
+
+.single-celebracion .single-sidebar {
+    background-color:#34D5BD4D;
+}
+
+.single-celebracion .single-sidebar a {
+    color: #353535;
+}
+
+.single-celebracion .single-nav {
+    background-color: #15A892;
+}
+
+.single-celebracion .single-sidebar h2 {
+    color: #333;
+}
+
+.single-celebracion .single-nav a {
+    color: #fff;
+}
+
+.single-celebracion .single-list {
+    background-color: #fff;
+}
+
+.single-celebracion .single-list-item {
+    background-color: #EAEAEA;
+}
+
+/* Single Boda */
+
+.single-boda .single-sidebar {
+    background-color: #fff;
+}
+
+.single-boda .single-sidebar a {
+    color: #353535;
+}
+
+.single-boda .single-nav {
+    background-color: #34D5BD4D;
+}
+
+.single-boda .single-sidebar h2 {
+    color: #333;
+}
+
+.single-boda .single-nav a {
+    color: #353535;
+}
+
+.single-boda .single-list {
+    background-color: #EAEAEA;
 }
